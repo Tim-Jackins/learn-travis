@@ -6,7 +6,7 @@ sudo: false
 #notifications:
 #  email:
 #    recipients:
-#     - timmins.jack595@gmail.com
+#     - timmins.jack595+github@gmail.com
 #    on_success: never # default: change
 #    on_failure: always # default: always
 
