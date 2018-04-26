@@ -1,6 +1,10 @@
 # learn-travis
 How do you use travis with python?
 
+.. image:: https://travis-ci.org/Tim-Jackins/learn-travis.svg?branch=master
+   :target: https://travis-ci.org/Tim-Jackins/learn-travis
+   :alt: Travis CI Status
+   
 sudo: false
 
 language: python
