@@ -1,17 +1,19 @@
 language: python
 
 python:
-  - "3.5"
+	- "3.5"
 
 script: 
-  - python hello.py
+	- python hello.py
 
 env:
-  - SLACK_API_TOKEN=$SLACK_API_TOKEN
+	- SLACK_API_TOKEN=$SLACK_API_TOKEN
 
-notifications:
-  email:
-    recipients:
-      - timmins.jack595@gmail.com
-    on_success: never
-    on_failure: always
+after_success:
+	- python .error_handling/telegram-bot.py
+#notifications:
+#  email:
+#    recipients:
+#      - timmins.jack595@gmail.com
+#    on_success: never
+#    on_failure: always

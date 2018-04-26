@@ -6,6 +6,7 @@ import pprint
 pp = pprint.PrettyPrinter(indent=4)
 TOKEN = os.environ['TELEGRAM_TOKEN']
 URL = 'https://api.telegram.org/bot{0}/'.format(TOKEN)
+chat_id = os.environ['DEFUALT_CHAT_ID']
 
 def get_url(url):
 	response = requests.get(url)
@@ -27,6 +28,6 @@ def latest_commit_name():
 		'grep refs/heads/master | cut -f 1')
 	return out.read().strip('\n')[:7]
 
-pp.pprint(get_updates())
+#pp.pprint(get_updates())
 print(latest_commit_name())
-#send_message(text, chat)
+send_message(os.environ, chat_id)
