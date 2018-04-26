@@ -1,0 +1,4 @@
+slackclient
+pprint
+beautifulsoup4
+autopep8
