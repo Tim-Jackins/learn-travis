@@ -3,8 +3,6 @@ language: python
 python:
   - "3.5"
 
-#install: pip3 install --trusted-host pypi.python.org -r requirements.txt
-
 script: 
   - python hello.py
 

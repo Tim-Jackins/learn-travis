@@ -1,2 +1,3 @@
+import os
 print('Hello World!')
-0/0
+print(os.environ['SLACK_API_TOKEN'])

@@ -13,7 +13,7 @@ python:
 	- 3.4
 	- 3.5
 	- 3.6
-
+#install: pip3 install --trusted-host pypi.python.org -r requirements.txt
 install: pip3 install --trusted-host pypi.python.org -r requirements.txt
 
 script: python3 print_rank.py #&& autopep8 print_rank.py --in-place
