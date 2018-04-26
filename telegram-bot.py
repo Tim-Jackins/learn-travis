@@ -30,4 +30,4 @@ def latest_commit_name():
 
 #pp.pprint(get_updates())
 print(latest_commit_name())
-send_message(os.environ, chat_id)
+send_message(os.environ['TRAVIS_TEST_RESULT'], chat_id)
