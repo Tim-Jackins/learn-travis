@@ -1,4 +1,11 @@
-sudo: false
+sudo: enabled
+
+notifications:
+  email:
+    recipients:
+      - timmins.jack595@gmail.com
+    on_success: never # default: change
+    on_failure: always # default: always
 
 language: python
 
@@ -13,4 +20,4 @@ install:
 script: python3 print_rank.py && autopep8 print_rank.py --in-place
 
 deploy:
-  skip_cleanup: true
+	skip_cleanup: true
