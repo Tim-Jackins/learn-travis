@@ -6,6 +6,9 @@ python:
 script: 
   - python hello.py
 
+env:
+  - SLACK_API_TOKEN=$SLACK_API_TOKEN
+
 notifications:
   email:
     recipients:
