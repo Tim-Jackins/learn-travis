@@ -19,4 +19,8 @@ install: pip3 install --trusted-host pypi.python.org -r requirements.txt
 script: python3 print_rank.py #&& autopep8 print_rank.py --in-place
 
 deploy:
-	skip_cleanup: true
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  keep-history: true
+  on:
+    branch: master
