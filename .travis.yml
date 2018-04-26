@@ -9,8 +9,8 @@ script:
 env:
 	- SLACK_API_TOKEN=$SLACK_API_TOKEN
 
-after_success: 
-	- python telegram-bot.py
+#after_success: 
+#	- python telegram-bot.py
 
 #notifications:
 #  email:
