@@ -3,13 +3,6 @@ How do you use travis with python?
 
 sudo: false
 
-#notifications:
-#  email:
-#    recipients:
-#     - timmins.jack595+github@gmail.com
-#    on_success: never # default: change
-#    on_failure: always # default: always
-
 language: python
 
 python:

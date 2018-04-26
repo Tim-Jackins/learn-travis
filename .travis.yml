@@ -5,3 +5,10 @@ python:
 
 script: 
   - python hello.py
+
+notifications:
+  email:
+    recipients:
+     - timmins.jack595@gmail.com
+    on_success: never # default: change
+    on_failure: always # default: always
