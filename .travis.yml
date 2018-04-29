@@ -1,17 +1,18 @@
 language: python
-
+ 
 python:
 	- "3.5"
-
+ 
 script: 
 	- python hello.py
-
+ 
 env:
 	- SLACK_API_TOKEN=$SLACK_API_TOKEN
 
 notifications:
-  email:
-    recipients:
-      - timmins.jack595@gmail.com
-    on_success: never
-    on_failure: always
+	slack: chsbacon:C4jKtt9sxUkJeCnloe4qv5EH
+	email:
+		recipients:
+			- timmins.jack595@gmail.com
+		on_success: never
+		on_failure: always
