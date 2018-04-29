@@ -12,4 +12,6 @@ env:
 notifications:
   slack:
     rooms:
-      - chsbacon:C4jKtt9sxUkJeCnloe4qv5EH#bot_testing
+			- chsbacon:C4jKtt9sxUkJeCnloe4qv5EH#bot_testing
+		on_success: never
+		on_failure: always
