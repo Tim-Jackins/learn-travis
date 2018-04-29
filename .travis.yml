@@ -11,8 +11,3 @@ env:
 
 notifications:
 	slack: chsbacon:C4jKtt9sxUkJeCnloe4qv5EH
-	email:
-		recipients:
-			- timmins.jack595@gmail.com
-		on_success: never
-		on_failure: always
