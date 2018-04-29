@@ -5,9 +5,6 @@ python:
  
 script: 
 	- python hello.py
- 
+
 env:
 	- SLACK_API_TOKEN=$SLACK_API_TOKEN
-
-notifications:
-	slack: chsbacon:C4jKtt9sxUkJeCnloe4qv5EH
